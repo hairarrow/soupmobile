@@ -1,13 +1,22 @@
-import styles from './styles/app.scss';
-console.log(styles);
-
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/app.scss';
+import './Containers/IconLibrary';
+
+import Home from './Containers/Home';
+
 
 const App = () => (
-  <h1>
-    A whole new world
-  </h1>
+  <Router>
+    <Route exact path="/" component={Home} />
+  </Router>
 );
 
 ReactDOM.render(
