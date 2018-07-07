@@ -11,6 +11,7 @@ import './styles/app.scss';
 import './Containers/IconLibrary';
 
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Home from './Containers/Home';
 
 
@@ -21,6 +22,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
+      <Footer />
     </div>
   </Router>
 );
