@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 import Socials from '../Socials';
@@ -36,6 +36,8 @@ const Header = () => (
             md="12"
             lg="8"
             xl="8"
+            tag={Link}
+            to="/"
           >
             <div
               style={{
