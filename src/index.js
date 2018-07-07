@@ -14,7 +14,7 @@ import Home from './Containers/Home';
 
 const App = () => (
   <Router>
-    <Route exact path="/" component={Home} />
+    <Route path="/" component={Home} />
   </Router>
 );
 

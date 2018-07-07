@@ -63,6 +63,7 @@ const Header = () => (
               href="https://www.123formbuilder.com/form-3593169/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: '#fff' }}
             >
               Subscribe to get the latest SoupMobile updates
             </a>

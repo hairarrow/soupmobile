@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist', '../assets'),
-    publicPath: '/assets',
+    // publicPath: '/assets',
     filename: '[name].bundle.js',
   },
   resolve: {

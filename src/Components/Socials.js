@@ -24,10 +24,10 @@ const Links = [
 ];
 
 const Socials = () => (
-  <div>
+  <div style={{ textAlign: 'center' }}>
     {Links.map(l => (
-      <a href={l.link} key={l.icon}>
-        <FontAwesomeIcon icon={['fab', l.icon]} />
+      <a href={l.link} key={l.icon} style={{ color: '#fff' }}>
+        <FontAwesomeIcon icon={['fab', l.icon]} style={{ fontSize: 38, marginRight: 10 }} />
       </a>
     ))}
   </div>
