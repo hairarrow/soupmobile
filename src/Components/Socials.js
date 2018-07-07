@@ -26,7 +26,7 @@ const Links = [
 const Socials = () => (
   <div>
     {Links.map(l => (
-      <a href={l.link}>
+      <a href={l.link} key={l.icon}>
         <FontAwesomeIcon icon={['fab', l.icon]} />
       </a>
     ))}
