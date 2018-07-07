@@ -13,7 +13,7 @@ const About = () => (
       background: `url(${Bg}) ${BLUE}`,
     }}
   >
-    <Row noGutters>
+    <Row>
       <Col>
         <div
           style={{

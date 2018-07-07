@@ -1,7 +1,4 @@
 import React from 'react';
-
-import { Container, Row, Col } from 'reactstrap';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Links = [
