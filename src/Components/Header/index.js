@@ -4,17 +4,20 @@ import { Container, Row, Col } from 'reactstrap';
 
 import Socials from '../Socials';
 
+import {
+  BLUE,
+  DARK_BLUE,
+} from '../../config';
+
 import Logo from './logo-readable.png';
 import Bg from '../../img/bg2.png';
 import Tear from '../../img/teartop.png';
 import Navigation from './Navigation';
 
-const BLUE = '#007fff';
-const DARK_BLUE = '#0b3b83';
-
 const Header = () => (
   <div
     style={{
+      marginBottom: 30,
       backgroundColor: `${BLUE}`,
       backgroundImage: `url(${Bg})`,
       borderTop: `14px solid ${DARK_BLUE}`,
