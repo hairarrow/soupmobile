@@ -6555,3 +6555,14 @@ a.text-dark:focus, a.text-dark:hover {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.mission-header {
+  color: red;
+  padding: 30px 0;
+  text-align: center; }
+
+p {
+  margin: auto;
+  font-size: 21px;
+  max-width: 560px; }
+  p + p {
+    margin-top: 20px; }
