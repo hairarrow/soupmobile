@@ -71,7 +71,7 @@ class Navigation extends React.Component {
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar isOpen={aboutIsOpen}>
-                <DropdownToggle nav caret href="/about" onMouseEnter={this.toggleAbout} onClick={this.toggleAbout}>
+                <DropdownToggle nav caret tag={NavLink} href="/about.html" onMouseEnter={this.toggleAbout} onClick={this.toggleAbout}>
                   About Us
                 </DropdownToggle>
                 <DropdownMenu onMouseLeave={this.toggleAbout}>

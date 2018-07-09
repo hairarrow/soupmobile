@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -12,7 +11,7 @@ import {
 
 const NLink = ({ path, title, big }) => (
   <NavItem style={{ marginBottom: 10 }}>
-    <NavLink tag={Link} to={path} className={(big) ? 'active' : ''}>
+    <NavLink href={path} className={(big) ? 'active' : ''}>
       {title}
     </NavLink>
   </NavItem>
