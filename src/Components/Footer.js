@@ -1,14 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import {
-  BLUE,
-  DARK_BLUE
-} from '../config';
+import { BLUE } from '../config';
 
 import Img from '../img/van-logo.png';
 import Bg from '../img/bg2.png';
-import Tear from '../img/tearbottom.png';
 
 const Footer = () => (
   <div
@@ -36,10 +32,12 @@ const Footer = () => (
               david@soupmobile.org
             </Col>
             <Col>
-              <span style={{
-                background: 'lightblue',
-                padding: '5px',
-              }}>
+              <span
+                style={{
+                  background: 'lightblue',
+                  padding: '5px',
+                }}
+              >
                 a 501(c)(3) charity organization
               </span>
             </Col>

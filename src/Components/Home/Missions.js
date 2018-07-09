@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 import MISSIONONE from '../../img/mission-1[1].jpg';
@@ -10,8 +9,8 @@ import MISSIONFOUR from '../../img/mission-4-6.jpg';
 
 const Mission = ({ title, link, img }) => (
   <Col style={{ marginBottom: 40 }}>
-    <Link
-      to={link}
+    <a
+      href={link}
       style={{
         width: 350,
         display: 'block',
@@ -39,7 +38,7 @@ const Mission = ({ title, link, img }) => (
       >
         {title}
       </span>
-    </Link>
+    </a>
   </Col>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import {
   Container,
   Row,
@@ -10,7 +9,6 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  ButtonGroup,
   Button,
 } from 'reactstrap';
 
@@ -110,9 +108,9 @@ const FLink = ({
   <Card>
     <CardBody>
       <CardTitle style={{ textAlign: 'center' }}>
-        <Link to={link}>
+        <a href={link}>
           {title}
-        </Link>
+        </a>
       </CardTitle>
     </CardBody>
     <div
@@ -147,8 +145,7 @@ const FLink = ({
           >
             {buttons.map(l => (
               <Button
-                tag={Link}
-                to={l.link}
+                href={l.link}
                 key={l.title}
                 style={{ display: 'inline', marginRight: 10, marginBottom: 10 }}
               >

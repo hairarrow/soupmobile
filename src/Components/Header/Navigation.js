@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 import {
   Collapse,
@@ -67,91 +66,91 @@ class Navigation extends React.Component {
           <Collapse isOpen={isOpen} navbar>
             <Nav navbar pills>
               <NavItem>
-                <NavLink tag={Link} to="/">
+                <NavLink href="/">
                   Home
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar isOpen={aboutIsOpen}>
-                <DropdownToggle nav caret tag={Link} to="/about" onMouseEnter={this.toggleAbout}>
+                <DropdownToggle nav caret href="/about" onMouseEnter={this.toggleAbout} onClick={this.toggleAbout}>
                   About Us
                 </DropdownToggle>
                 <DropdownMenu onMouseLeave={this.toggleAbout}>
                   <DropdownItem>
-                    <Link to="/about/our-story">
+                    <NavLink href="/about/our-story">
                       Our Story
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/about/FAQs">
+                    <NavLink href="/about/FAQs">
                       FAQs
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/about/financials">
+                    <NavLink href="/about/financials">
                       Financials
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/about/contact-us">
+                    <NavLink href="/about/contact-us">
                       Contact Us / Directions
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink tag={Link} to="/our-partners">
+                <NavLink href="/our-partners">
                   Our Partners
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar isOpen={newsIsOpen}>
-                <DropdownToggle nav caret tag={Link} to="/in-the-news" onMouseEnter={this.toggleNews}>
+                <DropdownToggle nav caret onMouseEnter={this.toggleNews} onClick={this.toggleNews}>
                   In The News
                 </DropdownToggle>
                 <DropdownMenu onMouseLeave={this.toggleNews}>
                   <DropdownItem>
-                    <Link to="/in-the-news/tv">
+                    <NavLink href="/in-the-news/tv">
                       TV
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/in-the-news/print">
+                    <NavLink href="/in-the-news/print">
                       Print
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/in-the-news/radio">
+                    <NavLink href="/in-the-news/radio">
                       Radio
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <Link to="/about/contact-us">
+                    <NavLink href="/about/contact-us">
                       Contact Us / Directions
-                    </Link>
+                    </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink tag={Link} to="/our-missions">
+                <NavLink href="/our-missions">
                   Our Missions
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/store">
+                <NavLink href="/store">
                   Store
                 </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
-          <Button tag={Link} to="/donate" color="warning">
+          <Button href="/donate" color="warning" style={{ marginRight: 10, marginLeft: 'auto' }}>
             Donate
           </Button>
-          <Button tag={Link} to="/volunteer" color="danger">
+          <Button href="/volunteer" color="danger">
             Volunteer
           </Button>
         </Navbar>

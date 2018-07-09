@@ -1,4 +1,11 @@
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+
+const htmlWebpackConfig = new htmlWebpackPlugin({
+  template: path.resolve(__dirname, '../src/index.html'),
+  filename: 'index.html',
+  inject: 'body',
+});
 
 module.exports = {
   context: path.resolve(__dirname, '../src'),
@@ -6,8 +13,8 @@ module.exports = {
     index: './index.js',
   },
   output: {
-    path: path.resolve(__dirname, '../dist', '../assets'),
-    // publicPath: '/assets',
+    path: path.resolve(__dirname, '../assets'),
+    // publicPath: '../assets',
     filename: '[name].bundle.js',
   },
   resolve: {
@@ -31,4 +38,5 @@ module.exports = {
     maxEntrypointSize: 500000,
     maxAssetSize: 500000,
   },
+  plugins: [ htmlWebpackConfig ],
 };

@@ -6,7 +6,11 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 module.exports = merge(baseConfig, {
   devtool: 'eval-source-map',
   devServer: {
+    inline: true,
     contentBase: path.resolve(__dirname, '../src'),
+    historyApiFallback: {
+      index: '/',
+    },
   },
   module: {
     rules: [
