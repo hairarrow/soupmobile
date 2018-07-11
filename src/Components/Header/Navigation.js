@@ -66,91 +66,91 @@ class Navigation extends React.Component {
           <Collapse isOpen={isOpen} navbar>
             <Nav navbar pills>
               <NavItem>
-                <NavLink href="/">
+                <NavLink href="/index.html" className="text-white">
                   Home
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar isOpen={aboutIsOpen}>
-                <DropdownToggle nav caret tag={NavLink} href="/about.html" onMouseEnter={this.toggleAbout} onClick={this.toggleAbout}>
+                <DropdownToggle nav caret tag={NavLink} href="/about.html" onMouseEnter={this.toggleAbout} onClick={this.toggleAbout} className="text-white">
                   About Us
                 </DropdownToggle>
                 <DropdownMenu onMouseLeave={this.toggleAbout}>
                   <DropdownItem>
-                    <NavLink href="/about/our-story">
+                    <NavLink href="/about.html" className="text-primary">
                       Our Story
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/about/FAQs">
+                    <NavLink href="/about/faq.html" className="text-primary">
                       FAQs
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/about/financials">
+                    <NavLink href="/about/financials.html" className="text-primary">
                       Financials
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/about/contact-us">
+                    <NavLink href="/about/contact-us.html" className="text-primary">
                       Contact Us / Directions
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/our-partners">
+                <NavLink href="/our-partners.html" className="text-white">
                   Our Partners
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar isOpen={newsIsOpen}>
-                <DropdownToggle nav caret onMouseEnter={this.toggleNews} onClick={this.toggleNews}>
+                <DropdownToggle tag={NavLink} href="/about/in-the-news.html" nav caret onMouseEnter={this.toggleNews} onClick={this.toggleNews} className="text-white">
                   In The News
                 </DropdownToggle>
                 <DropdownMenu onMouseLeave={this.toggleNews}>
                   <DropdownItem>
-                    <NavLink href="/in-the-news/tv">
+                    <NavLink href="/in-the-news/tv.html" className="text-primary">
                       TV
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/in-the-news/print">
+                    <NavLink href="/in-the-news/print.html" className="text-primary">
                       Print
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/in-the-news/radio">
+                    <NavLink href="/in-the-news/radio.html" className="text-primary">
                       Radio
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/about/contact-us">
+                    <NavLink href="/about/contact-us.html" className="text-primary">
                       Contact Us / Directions
                     </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/our-missions">
+                <NavLink href="/missions.html" className="text-white">
                   Our Missions
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/store">
+                <NavLink href="/store.html" className="text-white">
                   Store
                 </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
-          <Button href="/donate" color="warning" style={{ marginRight: 10, marginLeft: 'auto' }}>
+          <Button href="/donate.html" color="warning" style={{ marginRight: 10, marginLeft: 'auto' }}>
             Donate
           </Button>
-          <Button href="/volunteer" color="danger">
+          <Button href="/volunteer.html" color="danger">
             Volunteer
           </Button>
         </Navbar>
