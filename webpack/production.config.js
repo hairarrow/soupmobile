@@ -28,7 +28,7 @@ module.exports = merge(baseConfig, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name].bundle.css',
+      filename: '[name].bundle.[chunkhash].css',
       allChunks: true,
     }),
   ],
